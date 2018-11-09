@@ -12,26 +12,35 @@
 </head>
 
 <body class="bg-dark" style="overflow:hidden">
-	<nav class="navbar navbar-expand-lg justify-content-lg-center" style="z-index:10">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		</button>
 
-		<a class="navbar-brand" style="color:#fff">
-			<img draggable="false" src="media/logo.png" width="75" height="75" alt="" class="order-0 rounded-circle img-responsive">
-		</a>
-
-		<div class="collapsenavbar-collapse" id="navbarContent">
-		    <div class="navbar-nav">
-		        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">Home</span></a>
-		        <a class="nav-item nav-link" href="About.html">About</a>
-		        <a class="nav-item nav-link" href="#">Gallery</a>
-		        <a class="nav-item nav-link" href="#">Members</a>
-		        <a class="nav-item nav-link" href="#">Contact</a>
-
-		    </div>
-
-		</div>
+	<nav class="navbar navbar-expand-md justify-content-center" style="z-index:1">
+	    <a href="index.html" class="navbar-brand mr-0"><img draggable="false" src="media/logo.png" width="75" height="75" alt="" class="rounded-circle img-responsive"></a> 
+	    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	        <div class="wrapper-menu collapsed" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	            <div class="line-menu half start"></div>
+	            <div class="line-menu"></div>
+	            <div class="line-menu half end"></div>
+	        </div>
+      </button>
+	    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="navbarNavAltMarkup">
+	        <ul class="navbar-nav mx-auto text-center">
+	            <li class="nav-item active">
+	                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">Home</span></a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-item nav-link" href="About.html">About</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-item nav-link" href="Gallery.html">Gallery</a> 
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-item nav-link" href="Members.html">Members</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-item nav-link" href="Contact.html">Contact</a>
+	            </li>
+	        </ul>
+	    </div>
 	</nav>
 
 	<div id="myCarousel" class="carousel slide" data-interval="2000" style="position:absolute; top:0; width:100%;">

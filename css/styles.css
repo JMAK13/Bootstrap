@@ -2,13 +2,12 @@
     color: white;
     font-family: helvetica;
     font-size: 25px;
-  }
+}
 
 .nav-link.active{
     color: #aaf;
     font-weight: bold;
-    text-decoration: underline;
-  }
+}
 
 .carousel-indicators{
 	bottom: 49%;
