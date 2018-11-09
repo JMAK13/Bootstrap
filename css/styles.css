@@ -10,7 +10,7 @@
 }
 
 .carousel-indicators{
-	bottom: 55%;
+	bottom: 56%;
 }
 
 .carousel-indicators li{
@@ -41,7 +41,7 @@
 }
 
 .card-text{
-	color: #a1f;
+	color: #64f;
 	font-size: 14px;
 	font-family: helvetica;
 }
