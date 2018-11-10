@@ -1,3 +1,43 @@
+#wrapper {
+	display: inline-block;
+	border-radius: 500px;
+	position: relative;
+  	padding: 15px;
+	cursor: pointer;
+}
+.circle {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	border-color: none;
+}
+.line {
+	position: absolute;
+	height: 6px;
+	width: 100%;
+	background: white;
+	border-radius: 8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+	left:2%;
+}
+.top {
+	top: 18%;
+}
+.middle {
+	top: 48%;
+}
+.bottom {
+	top: 78%;
+}
+.icon.close .top {
+	transform: rotate(45deg);
+	top: 48%;
+}
+.icon.close .middle, .icon.close .bottom {
+	transform: rotate(-45deg);
+	top: 48%;
+}
+
 .nav-link{
     color: white;
     font-family: helvetica;
@@ -26,6 +66,7 @@
 
 .carousel-caption{
 	bottom:46%;
+	cursor: default;
 }
 
 .carousel-caption h1{
