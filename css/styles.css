@@ -2,15 +2,10 @@
 	display: inline-block;
 	border-radius: 500px;
 	position: relative;
-  	padding: 15px;
+  	padding: 20px;
 	cursor: pointer;
 }
-.circle {
-	width: 40px;
-	height: 40px;
-	position: relative;
-	border-color: none;
-}
+
 .line {
 	position: absolute;
 	height: 6px;
@@ -18,7 +13,6 @@
 	background: white;
 	border-radius: 8px;
 	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
-	left:2%;
 }
 .top {
 	top: 18%;
@@ -48,6 +42,11 @@
     color: #aaf;
     font-weight: bold;
 }
+
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
 
 .carousel-indicators{
 	bottom:45%;
