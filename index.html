@@ -13,19 +13,17 @@
 
 <body class="bg-dark" style="overflow:hidden">
 
-	<nav class="navbar navbar-expand-md fixed-top justify-content-between">
+	<nav class="navbar navbar-expand-sm fixed-top">
 	    
-	    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	    	<div id="wrapper">
-				<div class="circle icon">
-					<span class="line top"></span>
-					<span class="line middle"></span>
-					<span class="line bottom"></span>
-				</div>
-			</div>
-        </button>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="wrapper-menu" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="line-menu half start"></div>
+          <div class="line-menu"></div>
+          <div class="line-menu half end"></div>
+        </div>
+      </button>
 
-		<a href="index.html" class="navbar-brand"><img draggable="false" src="media/logo.png" width="60" alt="" class="rounded-circle img-fluid"></a>
+		<a href="index.html" class="navbar-brand"><img draggable="false" src="media/logo.png" width="80" alt="" class="rounded-circle img-fluid"></a>
 
 	    <div class="navbar-collapse collapse justify-content-center" id="navbarNavAltMarkup">
 	        <ul class="navbar-nav">
@@ -84,9 +82,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
-		$("#wrapper").click( function() {
-			$(".icon").toggleClass("close");
-		});
+		var wrapperMenu = document.querySelector('.wrapper-menu');
+		var navBar = document.querySelector('.navbar-collapse');
+		var menuBtn = document.querySelector('.navbar-toggler');
+
+		menuBtn.addEventListener('click', function(){
+		  if(navBar.className !== "navbar-collapse collapsing"){
+		    wrapperMenu.classList.toggle('open');
+		  }
+		})
 	</script>
 
 </body>
