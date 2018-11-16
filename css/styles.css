@@ -10,7 +10,31 @@
   src: url('maven-pro/MavenPro-Bold.ttf');
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 /*Navbar CSS*/
+div.navbar *::-moz-selection {
+    background: none !important;
+}
+div.navbar *::selection {
+    background: none !important;
+}
+.navbar {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;    
+}
+
 .nav-link{
     color: white;
     font-family: "Maven";
