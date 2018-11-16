@@ -1,7 +1,21 @@
+/*Custom Fonts*/
+@font-face {
+  font-family: 'Maven';
+  src: url('maven-pro/MavenPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Maven';
+  font-weight: bold;
+  src: url('maven-pro/MavenPro-Bold.ttf');
+}
+
+/*Navbar CSS*/
 .nav-link{
     color: white;
-    font-family: helvetica;
+    font-family: "Maven";
     font-size: 25px;
+    text-shadow: 2px 2px 6px black;
 }
 
 .nav-link.active{
@@ -9,40 +23,75 @@
     font-weight: bold;
 }
 
-  .navbar-toggler:focus, .navbar-toggler:active {
+ .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
-  }
+ }
 
-.carousel-indicators{
-	bottom:45%;
+ /*Jumbotron CSS*/
+ #page-content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
 }
 
-.carousel-indicators li{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+.jumbotron{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  width: 100vw;
+  text-shadow: 5px 10px 30px rgba(0,0,0,0.6);
+  color: white;
 }
 
-.carousel-inner{
-	width: 100%;
-	height: 100%;
+.lead{
+  margin-bottom: 30px;
+  font-family: "helvetica";
+  text-shadow: 2px 2px 6px rgba(0,0,0,1) !important;
 }
 
-.carousel-caption{
-	bottom:46%;
-	cursor: default;
+#Syrus{
+  font-family: "Maven";
+  font-size: 9vw;
+  font-weight: bold;
+  transition-duration: .36s;
 }
 
-.carousel-caption h1{
-	color: #00f;
-	font-size: 50px;
-	font-family: helvetica;
+#learn-more{
+  font-family: "Maven";
+  font-size: 17px;
+  padding: 15px;
+  background-color: rgba(0,0,0,.66);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: .36s;
 }
 
-.carousel-caption p{
-	color: #00f;
-	font-size: 15px;
-	font-weight: bold;
+#learn-more:hover{
+  background: rgba(100, 100, 255, .66);
+}
+
+ @media only screen and (max-width: 768px){
+ 	#Syrus{
+ 		font-size: 15vw;
+ 	}
+ }
+
+ #learn-more{
+  font-family: "Maven";
+  font-size: 17px;
+  padding: 15px;
+  background-color: rgba(0,0,0,.66);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: .36s;
 }
 
 /*Menu Icon CSS*/
