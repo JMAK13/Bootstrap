@@ -35,6 +35,10 @@ div.navbar *::selection {
   user-select: none;    
 }
 
+.nav-item{
+  padding:0;
+}
+
 .nav-link{
   color: white;
   font-family: "Maven";
