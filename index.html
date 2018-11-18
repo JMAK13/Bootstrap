@@ -14,7 +14,7 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 
-<body class="bg-dark" style="overflow:hidden">
+<body style="background-color: #000;">
 
 	<nav class="navbar navbar-expand-sm fixed-top">
 	    
@@ -49,16 +49,41 @@
 	    </div>
 	</nav>
 	
-	<img draggable="false" class="d-block img-fluid" src="media/space_station2.jpg" alt="First slide" style="height: 100%">
+	<img id="homebg" draggable="false" class="d-block img-fluid" src="media/space_station2.jpg" alt="First slide" style="height: 100%">
 
-	<div id="page-content">
-        <div id="main-contain">
-            <div class="jumbotron team-title">
-	            <h1><span id="Syrus" class="noselect">SYRUS</span></h1>
-	            <p class="lead noselect">Ushering in the new age of Augmented Reality by creating a new breed of interfaces for upcoming astronaught suits.</p>
-	            <a class="btn btn-primary btn-lg" id="learn-more" href="About.html" role="button">Learn More <i class="btn-icon fas fa-user-astronaut" aria-hidden="true"></i></a>
-            </div>
-        </div>
+    <div class="jumbotron team-title">
+        <h1><span id="Syrus" class="noselect">SYRUS</span></h1>
+        <p class="lead noselect">Ushering in the new age of Augmented Reality by creating a new breed of interfaces for upcoming astronaught suits.</p>
+        <a class="btn btn-primary btn-lg" id="learn-more" href="About.html" role="button">Learn More <i class="btn-icon fas fa-user-astronaut" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="main" class="container-12 w-100">
+    	<div class="card-deck mb-5">
+		    <div id="c1" class="card">
+		        <img class="card-img-top" src="media/hololens.jpg" alt="Card image cap">
+			    <div class="card-body">
+			        <h5 class="card-title">The Tech</h5>
+			        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+		  	</div>
+		  	<div id="c2" class="card">
+			    <img class="card-img-top" src="media/hololens2.jpg" alt="Card image cap">
+			    <div class="card-body">
+			        <h5 class="card-title">The Goal</h5>
+			        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			</div>
+			<div id="c3" class="card">
+			    <img class="card-img-top" src="media/rcc_logo.jpg" alt="Card image cap">
+			    <div class="card-body">
+			        <h5 class="card-title">The Team</h5>
+			        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+			        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			</div>
+		</div>
     </div>
 
 	<script>

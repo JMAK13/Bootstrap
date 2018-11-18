@@ -22,10 +22,10 @@
 
 /*Navbar CSS*/
 div.navbar *::-moz-selection {
-    background: none !important;
+  background: none !important;
 }
 div.navbar *::selection {
-    background: none !important;
+  background: none !important;
 }
 .navbar {
   -moz-user-select: none;
@@ -36,35 +36,43 @@ div.navbar *::selection {
 }
 
 .nav-link{
-    color: white;
-    font-family: "Maven";
-    font-size: 25px;
-    text-shadow: 2px 2px 6px black;
+  color: white;
+  font-family: "Maven";
+  font-size: 25px;
+  text-shadow: 2px 2px 6px black;
 }
 
 .nav-link.active{
-    color: #aaf;
-    font-weight: bold;
+  color: #aaf;
+  font-weight: bold;
 }
 
- .navbar-toggler:focus, .navbar-toggler:active {
-    outline: none;
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+}
+
+ #main{
+ 	background-color: #000;
+ 	position: absolute;
+ 	height: 25%;
+ 	padding: 5%;
  }
 
- /*Jumbotron CSS*/
- #page-content{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  display: inline-flex;
-  text-align: center;
+#c1{
+	background-image: linear-gradient( 135deg, #3C8CE7 10%, #3C8CE7 40%);
+}
+
+#c2{
+  background-image: linear-gradient( 135deg, #3C8CE7 40%, #00EAFF 60%);
+}
+
+#c3{
+  background-image: linear-gradient( 135deg, #00EAFF 60%, #00EAFF 100%);
 }
 
 .jumbotron{
-  position: relative;
+  text-align: center;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
@@ -101,13 +109,13 @@ div.navbar *::selection {
   background: rgba(100, 100, 255, .66);
 }
 
- @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
  	#Syrus{
  		font-size: 16vw;
  	}
- }
+}
 
- #learn-more{
+#learn-more{
   font-family: "Maven";
   font-size: 17px;
   padding: 15px;
