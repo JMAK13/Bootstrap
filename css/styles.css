@@ -20,13 +20,19 @@
                                   supported by Chrome and Opera */
 }
 
+#main{
+  background-image: linear-gradient(to bottom, #000411, #000);
+}
+
 /*Navbar CSS*/
 div.navbar *::-moz-selection{
   background: none !important;
 }
+
 div.navbar *::selection{
   background: none !important;
 }
+
 .navbar{
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -48,9 +54,20 @@ div.navbar *::selection{
   text-shadow: 2px 2px 6px black;
 }
 
+.nav-link:hover{
+  color: #b12;
+  transform: scale(1.15,1.15);
+  transition-duration: .3s; 
+}
+
 .nav-link.active{
   color: #aaf;
   font-weight: bold;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.15,1.15);
+  transition-duration: .3s;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active{
@@ -113,7 +130,9 @@ div.navbar *::selection{
 }
 
 #learn-more:hover{
-  background: rgba(100, 100, 255, .66);
+  background: #812;
+  transform: scale(1.15,1.15);
+  transition-duration: .25s;
 }
 
 @media only screen and (max-width: 768px){
@@ -125,6 +144,10 @@ div.navbar *::selection{
 @media only screen and (max-width: 560px){
   .open2{
     background-color: rgba(0,0,0,0.6);
+  }
+  .nav-link:hover{
+  color: #b12;
+  transform: none;
   }
 }
 
@@ -171,4 +194,9 @@ div.navbar *::selection{
 
 .open .line-menu.end{
   transform: rotate(-90deg) translateX(-3px);
+}
+
+#c1:hover,#c2:hover,#c3:hover{
+  transform: scale(1.03,1.03);
+  transition-duration: .2s;
 }
