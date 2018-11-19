@@ -41,6 +41,10 @@ div.navbar *::selection{
   user-select: none;
 }
 
+.navbar-nav{
+  text-align: center;
+}
+
 .nav-item{
   padding-bottom:0;
   padding-top: 0;
@@ -144,6 +148,7 @@ div.navbar *::selection{
 @media only screen and (max-width: 560px){
   .open2{
     background-color: rgba(0,0,0,0.6);
+    transition-duration: .5s;
   }
   .nav-link:hover{
   color: #b12;
