@@ -53,10 +53,6 @@ div.navbar *::selection{
   font-weight: bold;
 }
 
-.navbar-toggler{
-  background-color: #aaf;
-}
-
 .navbar-toggler:focus, .navbar-toggler:active{
   outline: none;
   background: transparent;
