@@ -123,11 +123,9 @@ div.navbar *::selection{
 }
 
 @media only screen and (max-width: 560px){
-  /*.navbar{
+  .open2{
     background-color: rgba(0,0,0,0.6);
-    min-width: 20%;
-    width: 100%;
-  }*/
+  }
 }
 
 /*Menu Icon CSS*/
@@ -173,8 +171,4 @@ div.navbar *::selection{
 
 .open .line-menu.end{
   transform: rotate(-90deg) translateX(-3px);
-}
-
-.open2{
-  background-color: rgba(0,0,0,0.6);
 }
