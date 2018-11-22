@@ -20,10 +20,6 @@
                                   supported by Chrome and Opera */
 }
 
-#main{
-  background-image: linear-gradient(to bottom, #000411, #000);
-}
-
 /*Navbar CSS*/
 div.navbar *::-moz-selection{
   background: none !important;
@@ -80,7 +76,7 @@ div.navbar *::selection{
 }
 
  #main{
- 	background-color: #000;
+ 	background-image: linear-gradient(to bottom, #000411, #000);
  	position: absolute;
  	height: 25%;
  	padding: 5%;
