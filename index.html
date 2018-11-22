@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+	<!--Navbar-->
 	<nav class="navbar navbar-expand-sm fixed-top">
 	    
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,15 +49,23 @@
 	    </div>
 	</nav>
 	
-	<img id="homebg" draggable="false" class="d-block img-fluid" src="media/space_station2.jpg" alt="First slide" style="height: 100%;">
+	<!--Background IMG-->
+	<img id="mainBG" draggable="false" class="d-block img-fluid" src="media/space_station2.jpg" alt="First slide" style="height: 100%;">
 
+	<!--Jumbotron Tema Title-->
     <div class="jumbotron team-title">
         <h1><span id="Syrus" class="noselect">SYRUS</span></h1>
         <p class="lead noselect">Ushering in the new age of Augmented Reality by creating a new breed of interfaces for upcoming astronaught suits.</p>
         <a class="btn btn-primary btn-lg" id="learn-more" href="About.html" role="button">Learn More <i class="btn-icon fas fa-user-astronaut" aria-hidden="true"></i></a>
     </div>
 
-    <div id="main" class="container-12 w-100 h-75 d-none d-md-block" style="overflow: auto;">
+    <div class="container-12 w-100" style="text-align: center; font-size: 50px; position: absolute; top:90%;">
+    	<a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <!--Card Deck Container-->
+    <div id="mainPage" class="container-12 w-100 h-75 d-none d-md-block" style="overflow: auto;">
     	<div class="card-deck">
 		    <div id="c1" class="card">
 		        <img class="card-img-top" src="media/hololens.jpg" alt="Card image cap">
@@ -86,6 +94,7 @@
 		</div>
     </div>
 
+    <!--J-Qeury Scripts-->
 	<script>
 		var menu = document.querySelector('.navbar');
 		var wrapperMenu = document.querySelector('.wrapper-menu');
