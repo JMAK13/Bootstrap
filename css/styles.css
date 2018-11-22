@@ -142,6 +142,9 @@ div.navbar *::selection{
 }
 
 @media only screen and (max-width: 560px){
+  body{
+    overflow:hidden;
+  }
   .open2{
     background-color: rgba(0,0,0,0.6);
     transition-duration: .5s;
