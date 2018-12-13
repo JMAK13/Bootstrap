@@ -1,0 +1,283 @@
+body{
+  background: url(css-bg/nebula_blur.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+/*Custom Fonts*/
+@font-face{
+  font-family: 'Maven';
+  src: url('maven-pro/MavenPro-Medium.ttf');
+}
+
+@font-face{
+  font-family: 'Maven';
+  font-weight: bold;
+  src: url('maven-pro/MavenPro-Bold.ttf');
+}
+
+/*No-Select Class*/
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/*Navbar CSS*/
+div.navbar *::-moz-selection{
+  background: none !important;
+}
+
+div.navbar *::selection{
+  background: none !important;
+}
+
+.navbar{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.navbar-nav{
+  text-align: center;
+  margin-left: -80px;
+}
+
+.nav-item{
+  padding-bottom:0;
+  padding-top: 0;
+  padding-left: 30px;
+}
+
+.nav-link{
+  color: white;
+  font-family: "Maven";
+  font-size: 25px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.nav-link:hover{
+  color: #b12;
+  transform: scale(1.15,1.15);
+  transition-duration: .3s; 
+}
+
+.nav-link.active{
+  color: #aaf;
+  font-weight: bold;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.15,1.15);
+  transition-duration: .3s;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active{
+  outline: none;
+  background: transparent;
+}
+
+.logo-head{
+  background-image: url(css-bg/nebula.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+img[alt="logo"]{
+  margin: 80px auto;
+  max-height: 350px;
+  margin-bottom: 0;
+  transition: .36s;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.7));
+}
+
+#fade{
+  background: rgba(248,80,50,0);
+  background: -moz-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,.8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,0)), color-stop(100%, rgba(0,0,0,.8)));
+  background: -webkit-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,.8) 100%);
+  background: -o-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,.8) 100%);
+  background: -ms-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom, rgba(248,80,50,0) 0%, rgba(0,0,0,.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#000000', GradientType=0 );
+  margin: 0;
+  height: auto;
+  bottom: 0px;
+}
+
+#fade h1{
+  font-family: 'Helvetica';
+  padding: 20px 0;
+  font-size: 3.5em;
+  transition: .36s;
+  margin: 0;
+  color: #57f;
+  font-weight: bold;
+}
+
+#divider-top{
+  background-color: #171717;
+  margin-top: 0;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card{
+  text-align: center;
+  border-radius: 9px;
+  padding-right: 0;
+  background-color: rgba(0,0,0,.50);
+  color: white;
+  height: 330px;
+  width: 14rem;
+  border: none;
+  margin: 20px auto;
+  -webkit-box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+  -moz-box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+  box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+    transition: .26s ease;
+}
+
+.card-title{
+  font-weight: bold;
+  margin: 15px 0px 5px 0px;
+}
+
+.card-img-top{
+  border-radius: 50%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 5px solid #434547;
+  -webkit-box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+  -moz-box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+  box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+}
+
+img[alt="Card image cap"]{
+  -webkit-filter: saturate(1.1);
+  filter: saturate(1.1);
+}
+
+.card-body{
+  padding: 0px 0px;
+  margin:auto 0;
+  height: 20px;
+}
+.card-body p {
+  font-size: 24px;
+}
+
+.card-overlay {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 3;
+  transition: .3s ease;
+  color: white;
+  text-align: center;
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+  transition: .36s;
+}
+
+.card:hover .blur{
+  filter: blur(7px);
+  transition: .2s;
+}
+
+.card:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .26s ease;
+  -webkit-box-shadow: 25px 21px 85px -24px rgba(0,0,0,0.86);
+  -moz-box-shadow: 25px 21px 85px -24px rgba(0,0,0,0.86);
+  box-shadow: 25px 21px 85px -24px rgba(0,0,0,0.86);
+}
+
+.links{
+  margin-top: 100px;
+  padding: 10px 0;
+}
+
+.list-group-item{
+  vertical-align: middle;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: none;
+}
+
+.members-link {
+  font-size: 28px;
+  text-decoration: none !important;
+  margin: 20px 0;
+  color: #FF5722;
+  transition: .2s;
+}
+
+.members-link:hover{
+  color: #DA3B01;
+}
+
+#divider-bottom{
+  background-color: #171717;
+  margin-bottom: 0;
+  padding: 15px 0;
+  margin-top: 20px;
+  box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 575.98px){
+  body{
+    background-image: url(css-bg/nebula_blur.jpg);
+    background-size: auto 200%;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .nav-link:hover{
+    color: #b12;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 767.98px){
+
+  img[alt="logo"]{
+    max-height: 300px;
+    transition: .36s;
+  }
+
+  #fade h1{
+    font-size: 2.5em;
+    transition: .36s;
+  }
+}
+
+/*Scoal Links CSS*/
+#mainSocial i:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: .25s;
+}
