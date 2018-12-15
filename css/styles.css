@@ -215,6 +215,9 @@ div.navbar *::selection{
 }
 
 /*Scoal Links CSS*/
+#mainSocial i{
+  padding-left: 15px;
+}
 #mainSocial i:hover{
   transform: scale(1.1,1.1);
   transition-duration: .25s;
