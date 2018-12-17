@@ -97,11 +97,6 @@ div.navbar *::selection{
     color: #b12;
     transform: none;
   }
-  #quote p{
-    color: white;
-    font-size: 50px;
-    text-align: center;
-  }
 }
 
 /*Header*/
@@ -114,7 +109,7 @@ div.navbar *::selection{
 }
 #quote p{
   color: white;
-  font-size: 3vw;
+  font-size: 50px;
   text-align: center;
 }
 

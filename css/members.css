@@ -145,7 +145,6 @@ img[alt="logo"]{
   max-height: 350px;
   margin-bottom: 0;
   transition: .36s;
-  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.7));
 }
 
 #fade{

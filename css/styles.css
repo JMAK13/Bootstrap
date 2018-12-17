@@ -79,7 +79,8 @@ div.navbar *::selection{
 
 /*Cards CSS*/
 #mainPage{
-  background-image: linear-gradient(to bottom, #000411, #000);
+  box-shadow: 0 10px 40px 40px black;
+  background: black;
   position: absolute;
   height: 25%;
   padding: 5%;
@@ -113,9 +114,10 @@ div.navbar *::selection{
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
-  width: 100vw;
+  width: 100%;
   text-shadow: 5px 5px 30px rgba(0,0,0,0.6);
   color: white;
+  margin:0;
 }
 
 .lead{
@@ -212,6 +214,10 @@ div.navbar *::selection{
 
 .open .line-menu.end{
   transform: rotate(-90deg) translateX(-3px);
+}
+
+#mainBG{
+  box-shadow: 0 20px 100px 10px rgba(0,0,0,0.7);
 }
 
 /*Scoal Links CSS*/
