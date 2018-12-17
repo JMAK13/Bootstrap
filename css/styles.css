@@ -218,6 +218,7 @@ div.navbar *::selection{
 
 #mainBG{
   box-shadow: 0 20px 100px 10px rgba(0,0,0,0.7);
+  width: 100%;
 }
 
 /*Scoal Links CSS*/
