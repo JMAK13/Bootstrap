@@ -1,5 +1,5 @@
 body{
-  background: url(css-bg/nebula_blur.jpg);
+  background: url('../media/bg-space.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
@@ -131,7 +131,7 @@ div.navbar *::selection{
 
 
 .logo-head{
-  background-image: url(css-bg/nebula.jpg);
+  background-image: url('../media/bg-space.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
@@ -298,7 +298,7 @@ img[alt="Card image cap"]{
 
 @media only screen and (max-width: 575.98px){
   body{
-    background-image: url(css-bg/nebula_blur.jpg);
+    background-image: url('../media/bg-space.png');
     background-size: auto 200%;
     background-position: center;
     background-attachment: fixed;
