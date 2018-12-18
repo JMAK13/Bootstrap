@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Syrus</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/brands.min.css">
-    <link rel="stylesheet" href="css/solid.min.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
+	<title>Syrus</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/brands.min.css">
+	<link rel="stylesheet" href="css/solid.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/curator.js"></script>
+
+	<!-- Our JS file -->
+	<script src="js/main.js"></script>
+	<!-- Our CSS file -->
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-dark">
+<body>
 
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-sm fixed-top">
-	    
+	<nav class="navbar navbar-expand-sm">
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="wrapper-menu" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="line-menu half start"></div>
-            <div class="line-menu"></div>
-            <div class="line-menu half end"></div>
-        </div>
-      </button>
+			<div class="wrapper-menu" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="line-menu half start"></div>
+				<div class="line-menu"></div>
+				<div class="line-menu half end"></div>
+			</div>
+		</button>
 
 		<a href="index.html" class="navbar-brand"><img draggable="false" src="media/logo.png" width="80" alt="" class="rounded-circle img-fluid"></a>
 
 	    <div class="navbar-collapse justify-content-center align-self-start collapse" id="navbarNavAltMarkup">
 	        <ul class="navbar-nav">
-	            <li class="nav-item active">
+	            <li class="nav-item">
 	                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">Home</span></a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-item nav-link" href="About.html">About</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-item nav-link active" href="Social.html">Social <span class="sr-only">Social</span></a> 
+	                <a class="nav-item nav-link" href="Social.html">Social <span class="sr-only">Social</span></a> 
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-item nav-link" href="Members.html">Members</a>
@@ -50,18 +54,15 @@
 	    </div>
 	</nav>
 
-	<script>
-		var menu = document.querySelector('.navbar');
-		var wrapperMenu = document.querySelector('.wrapper-menu');
-		var navBar = document.querySelector('.navbar-collapse');
-		var menuBtn = document.querySelector('.navbar-toggler');
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="curator-feed">
+					<h2>Social Feed</h2>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		menuBtn.addEventListener('click', function(){
-		  if(navBar.className !== "navbar-collapse justify-content-center align-self-start collapsing"){
-		    wrapperMenu.classList.toggle('open');
-		    menu.classList.toggle('open2');
-		  }
-		})
-	</script>
 </body>
 </html>
