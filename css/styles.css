@@ -233,11 +233,19 @@ div.navbar *::selection{
 
 /*Media Queries*/
 @media only screen and (max-width: 768px){
- 	#Syrus{
+  .open2{
+    background-color: white;
+    transition-duration: .5s;
+  }
+  .navbar-nav{
+    position: static;
+  }
+  .nav-link:hover{
+    color: #b12;
+    transform: none;
+  }
+  #Syrus{
      font-size: 16vw;
- 	}
-  .nav-item{
-    padding-left: 0;
   }
 }
 
@@ -245,6 +253,9 @@ div.navbar *::selection{
   .open2{
     background-color: white;
     transition-duration: .5s;
+  }
+  .navbar-nav{
+    position: static;
   }
   .nav-link:hover{
     color: #b12;
