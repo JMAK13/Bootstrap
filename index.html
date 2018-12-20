@@ -12,8 +12,6 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<!-- Our JS file -->
-	<script src="js/main.js"></script>
 	<!-- Our CSS file -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -53,24 +51,23 @@
 	    </div>
 	</nav>
 	<!-- End of NAV -->
-	<!--Background IMG-->
-	<img id="mainBG" draggable="false" class="d-block img-fluid" src="media/space_station2.jpg" alt="First slide">
 
-	<!--Jumbotron Tema Title-->
-    <div class="jumbotron justify-content-center">
-        <h1 id="Syrus">SYRUS</h1>
+	<!--Background IMG-->
+	<div class="jumbotron">
+		<img src="media/space_station2.jpg" draggable="false">
+        <h1 id="Syrus" class="noselect">SYRUS</h1>
         <p class="lead noselect">Ushering in the new age of Augmented Reality by creating a new breed of interfaces for upcoming astronaught suits.</p>
         <!-- <a class="btn btn-primary btn-lg" id="learn-more" href="About.html" role="button">Learn More <i class="btn-icon fas fa-user-astronaut" aria-hidden="true"></i></a> -->
 	</div>
 
-	<div class="container d-none d-lg-block">
+	<div id="scroller" class="container w-100">
 		<section id="scrollBtn" class="demo">
-			<a href="#mainPage"><span></span>Scroll</a>
+			<a href="#mainPage"></a>
 		</section>
 	</div>
 
     <!--Card Deck Container-->
-    <div id="mainPage" class="container-12 w-100 h-75 d-none d-md-block">
+    <div id="mainPage" class="container-12 w-100 h-75">
     	<div class="card-deck">
 		    <a href="About.html" id="c1" class="card">
 		        <img class="card-img-top" src="media/hololens.jpg" alt="Card image cap">
@@ -96,13 +93,17 @@
 		</div>
 	</div>
 
-	<div id="mainSoc" class="col-12 w-100" style="text-align: center; font-size: 75px; background: white; padding: 3% 0 3% 0;">
+	<div id="mainSoc" class="col-12 w-100">
     	<a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
 	</div>
 
 	<div>
 		
 	</div>
+
+	<!-- Our JS file -->
+	<script src="js/main.js"></script>
 </body>
 </html>

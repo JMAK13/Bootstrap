@@ -1,0 +1,190 @@
+/*Custom Fonts*/
+@font-face{
+  font-family: 'Maven';
+  src: url('maven-pro/MavenPro-Medium.ttf');
+}
+
+@font-face{
+  font-family: 'Maven';
+  font-weight: bold;
+  src: url('maven-pro/MavenPro-Bold.ttf');
+}
+
+/*No-Select Class*/
+.noselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/*Navbar CSS*/
+div.navbar *::-moz-selection{
+  background: none !important;
+}
+
+div.navbar *::selection{
+  background: none !important;
+}
+
+.navbar{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.navbar-nav{
+  text-align: center;
+  margin-left: -80px;
+}
+
+.nav-item{
+  padding-bottom:0;
+  padding-top: 0;
+  padding-left: 30px;
+}
+
+.nav-link{
+  color: white;
+  font-family: "Maven";
+  font-size: 25px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.nav-link:hover{
+  color: #b12;
+  transform: scale(1.15,1.15);
+  transition-duration: .3s; 
+}
+
+.nav-link.active{
+  color: #aaf;
+  font-weight: bold;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.15,1.15);
+  transition-duration: .3s;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active{
+  outline: none;
+  background: transparent;
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 768px){
+  body{
+    overflow:hidden;
+  }
+ 	#Syrus{
+ 		font-size: 16vw;
+ 	}
+}
+
+@media only screen and (max-width: 560px){
+  .open2{
+    background-color: rgba(0,0,0,0.6);
+    transition-duration: .5s;
+  }
+  .nav-link:hover{
+    color: #b12;
+    transform: none;
+  }
+}
+
+/*Header*/
+#quote{
+  background-position: center;
+  background: linear-gradient(to top, rgba(0,0,0,0.3) 80%, rgba(0,0,0,.3) 100%), url('../media/bg-space.png');
+  background-size: cover;
+  padding: 2%;
+  margin: 0;
+}
+#quote p{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+/*Paragraphs*/
+#par1{
+  color: white;
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+}
+
+#par2{
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+}
+
+#par3{
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+}
+
+/*Menu Icon CSS*/
+.wrapper-menu{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 150ms ease-out;
+}
+
+.wrapper-menu.open{
+  transform: rotate(-45deg);
+}
+
+.line-menu{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.line-menu.half{
+  width: 50%;
+}
+
+.line-menu.start{
+  transition: transform 150ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+.open .line-menu.start{
+  transform: rotate(-90deg) translateX(3px);
+}
+
+.line-menu.end{
+  align-self: flex-end;
+  transition: transform 150ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.open .line-menu.end{
+  transform: rotate(-90deg) translateX(-3px);
+}
+
+/*Scoal Links CSS*/
+#mainSocial i{
+  padding-left: 15px;
+}
+#mainSocial i:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: .25s;
+}

@@ -30,11 +30,9 @@ html, body {
 div.navbar *::-moz-selection{
   background: none !important;
 }
-
 div.navbar *::selection{
   background: none !important;
 }
-
 .navbar{
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -43,43 +41,52 @@ div.navbar *::selection{
   user-select: none;
   background: white;
 }
-
 .navbar-nav{
   text-align: center;
+<<<<<<< HEAD
+  position: absolute;
+  top: 30%;
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 }
-
 .nav-item{
   padding-top: 0;
   padding-left: 30px;
 }
-
 .nav-link{
   color: rgba(48, 48, 48, 0.781);
   font-family: "Maven";
   font-size: 25px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);}
+<<<<<<< HEAD
+=======
 
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 .nav-link:hover{
   color: #b12;
   transform: scale(1.15,1.15);
   transition-duration: .3s; 
 }
-
 .nav-link.active{
   color: #aaf;
   font-weight: bold;
 }
-
 .navbar-brand:hover{
   transform: scale(1.15,1.15);
   transition-duration: .3s;
 }
-
 .navbar-toggler:focus, .navbar-toggler:active{
   outline: none;
 }
 
 /* Scroll Start */
+<<<<<<< HEAD
+#scoller{
+  text-align: center;
+}
+#scrollBtn a {
+  position: absolute;
+=======
 #scrollBtn a {
   padding-top: 70px;
 }
@@ -87,6 +94,7 @@ div.navbar *::selection{
 #scrollBtn a span {
   position: absolute;
   top: 0;
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   left: 50%;
   width: 24px;
   height: 24px;
@@ -99,7 +107,10 @@ div.navbar *::selection{
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 @-webkit-keyframes sdb05 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -113,7 +124,10 @@ div.navbar *::selection{
     opacity: 0;
   }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 @keyframes sdb05 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
@@ -127,12 +141,16 @@ div.navbar *::selection{
     opacity: 0;
   }
 }
+<<<<<<< HEAD
+.demo a {
+=======
 
 .demo a {
   position: absolute;
   bottom: 20px;
   left: 50%;
   z-index: 2;
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -142,7 +160,10 @@ div.navbar *::selection{
   text-decoration: none;
   transition: opacity .3s;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 .demo a:hover {
   opacity: .5;
 }
@@ -155,6 +176,10 @@ div.navbar *::selection{
   padding: 8%;
   overflow: none;
   box-shadow: 0 -10px 20px 20px black;
+<<<<<<< HEAD
+  margin-top: 5%;
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 }
 .card {
   background-color: transparent ;
@@ -200,31 +225,53 @@ div.navbar *::selection{
 
 /*Jumbotron CSS*/
 .jumbotron{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+<<<<<<< HEAD
+=======
   position: absolute;
   top: 20%;
   background-color: transparent;
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   width: 100%;
   text-shadow: 5px 5px 30px rgba(0,0,0,0.6);
   color: white;
   margin: 0;
+<<<<<<< HEAD
+  padding: 0;
 }
-
+.jumbotron img{
+  width: 100%;
+  margin: 0;
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
+}
 .lead{
+<<<<<<< HEAD
+  position: absolute;
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   font-family: "helvetica";
   text-shadow: 2px 2px 6px rgba(0,0,0,1) !important;
 }
-
 #Syrus{
+  position: absolute;
+  transform: translate(0, -100px);
   font-family: "Maven";
   font-size: 9vw;
   font-weight: bold;
   transition-duration: .36s;
   text-align: center;
   letter-spacing: 5px;
+<<<<<<< HEAD
+  background: transparent;
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 }
-
-#learn-more{
+/*#learn-more{
   font-family: "Maven";
   font-size: 17px;
   padding: 15px;
@@ -234,39 +281,52 @@ div.navbar *::selection{
   outline: none;
   transition-duration: .36s;
 }
-
 #learn-more:hover{
   background: #812;
+<<<<<<< HEAD
+  transform: scale(1.15,1.15);
+  transition-duration: .25s;
+}*/
+=======
   /* transform: scale(1.15,1.15); */
   /* transition-duration: .25s; */
 }
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 
 /*Media Queries*/
 @media only screen and (max-width: 768px){
  	#Syrus{
      font-size: 16vw;
  	}
+<<<<<<< HEAD
+  .nav-item{
+    padding-left: 0;
+=======
   #mainSoc{
     position: absolute;
     bottom: 10%;
   }
   .nav-item{
   padding-left: 0;
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   }
 }
 
 @media only screen and (max-width: 560px){
   .open2{
-    background-color: rgba(0,0,0,0.6);
+    background-color: white;
     transition-duration: .5s;
   }
   .nav-link:hover{
     color: #b12;
     transform: none;
+<<<<<<< HEAD
+=======
   }
   #mainSoc{
     position: absolute;
     bottom: 0;
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
   }
 }
 
@@ -280,45 +340,41 @@ div.navbar *::selection{
   cursor: pointer;
   transition: transform 150ms ease-out;
 }
-
 .wrapper-menu.open{
   transform: rotate(-45deg);
 }
-
 .line-menu{
   background-color: #000;
   border-radius: 5px;
   width: 100%;
   height: 3px;
 }
-
 .line-menu.half{
   width: 50%;
 }
-
 .line-menu.start{
   transition: transform 150ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transform-origin: right;
 }
-
 .open .line-menu.start{
   transform: rotate(-90deg) translateX(3px);
 }
-
 .line-menu.end{
   align-self: flex-end;
   transition: transform 150ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transform-origin: left;
 }
-
 .open .line-menu.end{
   transform: rotate(-90deg) translateX(-3px);
 }
 
+<<<<<<< HEAD
+=======
 #mainBG{
   width: 100%;
 }
 
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 /*Scoal Links CSS*/
 #mainSocial i{
   padding-left: 15px;
@@ -328,6 +384,15 @@ div.navbar *::selection{
   transform: scale(1.1,1.1);
   transition-duration: .25s;
 }
+<<<<<<< HEAD
+#mainSoc{
+  text-align: center;
+  font-size: 75px;
+  background: white;
+  padding: 3% 0 3% 0;
+}
+=======
+>>>>>>> 095573a0d65e8670e944cc90951cd64c8718edcf
 
 /* Social Media Feeds */
 .curator-feed {
