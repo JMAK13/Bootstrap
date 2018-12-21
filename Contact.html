@@ -11,9 +11,7 @@
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-	
-		<!-- Our JS file -->
-		<script src="js/main.js"></script>
+
 		<!-- Our CSS file -->
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
@@ -21,7 +19,7 @@
 <body style="overflow:hidden">
 
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-sm fixed-top">
+	<nav class="navbar navbar-expand-md">
 	    
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <div class="wrapper-menu" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,20 +51,17 @@
 	        </ul>
 	    </div>
 	</nav>
-</div>
 
-	<script>
-		var menu = document.querySelector('.navbar');
-		var wrapperMenu = document.querySelector('.wrapper-menu');
-		var navBar = document.querySelector('.navbar-collapse');
-		var menuBtn = document.querySelector('.navbar-toggler');
+	<!--Form-->
+	<h1 style="color: white; text-align: center; margin: 2%;">Subscribe to see Syrus Team Updates</h1>
+	<h3 style="color: white; text-align: center; margin: 2%;">Enter your email</h3>
+	<form style="display: flex; flex-direction: column; justify-content: center; align-items: center;" action="js/subscription-handler.php" method="post">
+		<input type="email" name="userEm" placeholder="Your Email" />
+		<br>
+		<input type="submit" name="submit" />
+	</form> 
 
-		menuBtn.addEventListener('click', function(){
-		  if(navBar.className !== "navbar-collapse justify-content-center align-self-start collapsing"){
-		    wrapperMenu.classList.toggle('open');
-		    menu.classList.toggle('open2');
-		  }
-		})
-	</script>
+	<!-- Our JS file -->
+	<script src="js/main.js"></script>
 </body>
 </html>
