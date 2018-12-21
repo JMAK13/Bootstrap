@@ -270,6 +270,9 @@ div.navbar *::selection{
     color: #b12;
     transform: none;
   }
+  .nav-item{
+    margin-left: -18px;
+  }
   #Syrus{
      font-size: 16vw;
   }
@@ -282,6 +285,9 @@ div.navbar *::selection{
   }
   .navbar-nav{
     position: static;
+  }
+  .nav-item{
+    margin-left: -18px;
   }
   .nav-link:hover{
     color: #b12;
