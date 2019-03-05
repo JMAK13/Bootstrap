@@ -12,53 +12,45 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<!-- Our JS file -->
-	<script src="js/main.js"></script>
 	<!-- Our CSS file -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="bg-dark">
 
-	<nav class="navbar navbar-expand-sm fixed-top">
-	    
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<!--Navbar-->
+  <nav class="navbar navbar-expand-md" style="margin-bottom: 2%;">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <div class="wrapper-menu" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="line-menu half start"></div>
-          <div class="line-menu"></div>
-          <div class="line-menu half end"></div>
+            <div class="line-menu half start"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu half end"></div>
         </div>
       </button>
 
-		<a href="index.html" class="navbar-brand"><img draggable="false" src="media/logo.png" width="80" alt="" class="rounded-circle img-fluid"></a>
+    <a href="index.html" class="navbar-brand"><img draggable="false" src="media/logo.png" width="80" alt="" class="rounded-circle img-fluid"></a>
 
-	    <div class="collapse navbar-collapse justify-content-center align-self-start" id="navbarNavAltMarkup">
-	        <ul class="navbar-nav" style="margin-right: -17px;">
-	            <li class="nav-item active">
-	                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">Home</span></a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-item nav-link" href="About.html">About</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-item nav-link" href="Social.html">Social</a> 
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-item nav-link active" href="Members.html">Members <span class="sr-only">Members</span></a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-item nav-link" href="Contact.html">Contact <i class="d-none d-md-inline fa fa-space-shuttle" aria-hidden="true"></i></a>
-	            </li>
-	        </ul>
-	    </div>
-	</nav>
-
-	<div class="logo-head">
-      <img src="media/logo.png" class="img-fluid" alt="logo">
-      <div id="fade">
-          <h1 id="members-title">Our Team</h1>
+      <div class="navbar-collapse justify-content-center align-self-start collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">Home</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-item nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-item nav-link" href="Social.html">Social</a> 
+              </li>
+              <li class="nav-item">
+                  <a class="nav-item nav-link active" href="Members.html">Members</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-item nav-link" href="Contact.html">Contact  <span class="sr-only">Contact</span><i class="d-none d-md-inline fas fa-space-shuttle"></i></a>
+              </li>
+          </ul>
       </div>
-    </div>
+  </nav>
 
     <div class="container">
       <div class="row justify-content-center">
@@ -327,23 +319,14 @@
 
     <div id="divider-bottom"></div>
 
-    <div class="container-12 w-100" style="text-align: center; font-size: 50px;">
-    	<a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <!--Social Footer-->
+    <div id="mainSoc" class="col-12 w-100" style="margin-top: 2%;">
+      <a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
     </div>
 
-	<script>
-		var menu = document.querySelector('.navbar');
-		var wrapperMenu = document.querySelector('.wrapper-menu');
-		var navBar = document.querySelector('.navbar-collapse');
-		var menuBtn = document.querySelector('.navbar-toggler');
-
-		menuBtn.addEventListener('click', function(){
-		  if(navBar.className !== "navbar-collapse justify-content-center align-self-start collapsing"){
-		    wrapperMenu.classList.toggle('open');
-		    menu.classList.toggle('open2');
-		  }
-		})
-	</script>
+  <!-- Our JS file -->
+  <script src="js/main.js"></script>
 </body>
 </html>
