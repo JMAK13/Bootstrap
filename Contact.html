@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 73%;">
 	<head>
 		<title>Syrus</title>
 		<meta charset="utf-8">
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
-<body style="overflow:hidden">
+<body class="bg-dark" style="height: 100%; overflow: hidden;">
 
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-md">
@@ -45,7 +45,7 @@
 	            <li class="nav-item">
 	                <a class="nav-item nav-link" href="Members.html">Members</a>
 	            </li>
-	            <li class="nav-item">
+	            <li class="nav-item active">
 	                <a class="nav-item nav-link active" href="Contact.html">Contact  <span class="sr-only">Contact</span><i class="d-none d-md-inline fas fa-space-shuttle"></i></a>
 	            </li>
 	        </ul>
@@ -53,19 +53,25 @@
 	</nav>
 
 	<!--Form-->
-	<h1 style="color: white; text-align: center; margin: 8% 2% 2% 2%;">Subscribe to see Syrus Team Updates</h1>
-	<h3 style="color: white; text-align: center; margin: 2%;">Enter your email</h3>
-	<form style="display: flex; flex-direction: column; justify-content: center; align-items: center;" action="js/subscription-handler.php" method="post">
-		<input type="email" name="userEm" placeholder="Your Email" />
-		<br>
-		<input type="submit" name="submit" />
-	</form>
+	<div class="container2 bg-dark">
+	<h1 id="t1">Keep up with recent Syrus News by Subscribing to our Email Newsletter!</h1>
+	<h3 id="t2">Enter your email below and click submit to start receiving news</h3>
+	
+		<form style="display: flex; flex-direction: column; align-items: center;" action="js/subscription-handler.php" method="post">
+			<input type="email" name="userEm" placeholder="Your Email" />
+			<br>
+			<input type="submit" name="submit" />
+		</form>
+	</div>
 
 	<!--Social Footer-->
 	<div id="mainSoc" class="col-12 w-100 fixed-bottom">
     	<a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+	</div>
+	<div>
+		
 	</div>
 
 	<!-- Our JS file -->

@@ -10,7 +10,7 @@
   src: url('maven-pro/MavenPro-Bold.ttf');
 }
 
-html, body {
+html, body{
   padding: 0;
   margin: 0;
   background: black;
@@ -54,17 +54,16 @@ div.navbar *::selection{
   color: rgba(48, 48, 48, 0.781);
   font-family: "Maven";
   font-size: 25px;
-  text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
 }
 .nav-link:hover{
-  color: #b12;
+  color: #30baff;
   -webkit-transform: scale(1.15,1.15);
   -webkit-transition-duration: .3s; 
   transform: scale(1.15,1.15);
   transition-duration: .3s; 
 }
 .nav-link.active{
-  color: #aaf;
+  color: #ff9030;
   font-weight: bold;
 }
 .navbar-brand:hover{
@@ -94,33 +93,33 @@ div.navbar *::selection{
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes sdb05 {
-  0% {
+@-webkit-keyframes sdb05{
+  0%{
     -webkit-transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
   }
-  50% {
+  50%{
     opacity: 1;
   }
-  100% {
+  100%{
     -webkit-transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
 }
-@keyframes sdb05 {
-  0% {
+@keyframes sdb05{
+  0%{
     transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
   }
-  50% {
+  50%{
     opacity: 1;
   }
-  100% {
+  100%{
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
 }
-.demo a {
+.demo a{
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -130,7 +129,7 @@ div.navbar *::selection{
   text-decoration: none;
   transition: opacity .3s;
 }
-.demo a:hover {
+.demo a:hover{
   opacity: .5;
 }
 /* Scroll End */
@@ -144,14 +143,14 @@ div.navbar *::selection{
   overflow: none;
   margin-top: 5%;
 }
-.card {
+.card{
   background-color: transparent ;
   color: white;
 }
-.card-body {
+.card-body{
    color: white;
 }
-.card-title {
+.card-title{
   font-size: 22px;
 }
 #c1{
@@ -180,15 +179,15 @@ div.navbar *::selection{
   transform: scale(1.03,1.03);
   transition-duration: .2s;
 }
-.card-title {
+.card-title{
   text-align: center;
 }
-.card {
+.card{
   border:none;
   cursor: pointer;
   color: black;
 }
-.card:hover {
+.card:hover{
   color:black;
   text-decoration: none;
 }
@@ -258,6 +257,11 @@ div.navbar *::selection{
 }*/
 
 /*Media Queries*/
+@media only screen and (max-width: 1400px){
+  #abt p{
+    font-size: 13px;
+  }
+}
 @media only screen and (max-width: 768px){
   .open2{
     background-color: white;
@@ -277,6 +281,9 @@ div.navbar *::selection{
   #Syrus{
      font-size: 16vw;
   }
+  #abt p{
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 560px){
@@ -294,6 +301,9 @@ div.navbar *::selection{
   .nav-link:hover{
     transform: none;
     color: black;
+  }
+  #abt p{
+    font-size: 10px;
   }
 }
 
@@ -359,7 +369,73 @@ div.navbar *::selection{
 }
 
 /* Social Media Feeds */
-.curator-feed {
+.curator-feed{
   margin-top: 2%;
   background-color: #f2f2f2;
+}
+
+/* Members Page Styles */
+.card-img-top2{
+    border-radius: 50%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 5px solid #434547;
+    -webkit-box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+    -moz-box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+    box-shadow: 5px 5px 34px -2px rgba(0,0,0,0.79);
+    vertical-align: middle;
+}
+.card2{
+    text-align: center;
+    border-radius: 9px;
+    padding-right: 0;
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    height: 330px;
+    width: 14rem;
+    border: none;
+    margin: 20px auto;
+    -webkit-box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+    -moz-box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+    box-shadow: 25px 21px 75px -24px rgba(0,0,0,0.66);
+    transition: .26s ease;
+}
+.card2:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px 2px #30baff;
+  transition-duration: .3s;
+}
+.list-group-item{
+  background: none;
+}
+
+/* Contact Page Styles */
+.container2{
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../media/logo.png') no-repeat right, url('../media/rcc_logo.png') no-repeat left;
+  background-size: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#t1{
+  color: white;
+  text-align: center;
+  margin: -8% 2% 2% 2%;
+}
+#t2{
+  color: white;
+  text-align: center;
+  margin: 0 0 2% 0;
+}
+
+/* About Page Styling */
+#abt{
+  color: white;
+  font-size: 24px;
 }
