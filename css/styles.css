@@ -261,6 +261,9 @@ div.navbar *::selection{
   #abt p{
     font-size: 13px;
   }
+  #mainSoc1{
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px){
   .open2{
@@ -367,6 +370,12 @@ div.navbar *::selection{
   background: white;
   padding: 3% 0 3% 0;
 }
+#mainSoc1{
+  text-align: center;
+  font-size: 75px;
+  background: white;
+  padding: 3% 0 3% 0;
+}
 
 /* Social Media Feeds */
 .curator-feed{
@@ -433,9 +442,31 @@ div.navbar *::selection{
   text-align: center;
   margin: 0 0 2% 0;
 }
+#submitB{
+  border: 3px solid #37b;
+  border-radius: 5px;
+  padding: 8px 20px 8px 20px;
+  background-color: #30baff;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+#submitB:hover{
+  transform: scale(1.2);
+  transition-duration: .2s;
+}
+#tfield{
+  padding: 7px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* About Page Styling */
 #abt{
   color: white;
   font-size: 24px;
 }
+

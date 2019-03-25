@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 73%;">
+<html class="bg-dark" lang="en" style="height: 73%;">
 	<head>
 		<title>Syrus</title>
 		<meta charset="utf-8">
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
-<body class="bg-dark" style="height: 100%; overflow: hidden;">
+<body class="bg-dark" style="height: 100%;">
 
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-md">
@@ -57,15 +57,15 @@
 	<h1 id="t1">Keep up with recent Syrus News by Subscribing to our Email Newsletter!</h1>
 	<h3 id="t2" class="d-none d-md-block">Enter your email below and click submit to start receiving news</h3>
 	
-		<form style="display: flex; flex-direction: column; align-items: center;" action="js/subscription-handler.php" method="post">
-			<input type="email" name="userEm" placeholder="Your Email" />
+		<form action="js/subscription-handler.php" method="post">
+			<input id="tfield" type="email" name="userEm" placeholder="Your Email" />
 			<br>
-			<input type="submit" name="submit" />
+			<input id="submitB" type="submit" name="submit" />
 		</form>
 	</div>
 
 	<!--Social Footer-->
-	<div id="mainSoc" class="col-12 w-100 fixed-bottom">
+	<div id="mainSoc1" class="col-12 w-100 fixed-bottom">
     	<a id="mainSocial" class="col" href="https://www.instagram.com/rccsuits/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     	<a id="mainSocial" class="col" href="https://twitter.com/rcc_suits?lang=en" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
