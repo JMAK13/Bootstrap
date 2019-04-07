@@ -247,8 +247,11 @@ div.navbar *::selection{
   #abt p{
     font-size: 22px;
   }
-  #cbody{
-    height: 80%;
+  #t1{
+    font-size: 20px;
+  }
+  #t2{
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 768px){
@@ -277,8 +280,11 @@ div.navbar *::selection{
   #scrollBtn{
     display: none;
   }
-  #cbody{
-    height: 100%;
+  #t1{
+    font-size: 20px;
+  }
+  #t2{
+    font-size: 13px;
   }
 }
 
@@ -302,8 +308,11 @@ div.navbar *::selection{
   #abt p{
     font-size: 14px;
   }
-  #cbody{
-    height: 100%;
+  #t1{
+    font-size: 20px;
+  }
+  #t2{
+    font-size: 13px;
   }
 }
 
