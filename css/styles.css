@@ -258,6 +258,7 @@ div.navbar *::selection{
   }
   .nav-link:hover{
     color: black;
+    -webkit-transform: none;
     transform: none;
   }
   .nav-item{
@@ -288,11 +289,15 @@ div.navbar *::selection{
     text-shadow: none;
   }
   .nav-link:hover{
+    -webkit-transform: none;
     transform: none;
     color: black;
   }
   #abt p{
     font-size: 14px;
+  }
+  #mainSoc1{
+    display: none;
   }
 }
 
@@ -397,7 +402,10 @@ div.navbar *::selection{
     transition: .26s ease;
 }
 .card2:hover{
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-box-shadow: box-shadow: 5px 5px 15px 2px #30baff;
+  -moz-box-shadow: box-shadow: 5px 5px 15px 2px #30baff;
   box-shadow: 5px 5px 15px 2px #30baff;
   transition-duration: .3s;
 }
