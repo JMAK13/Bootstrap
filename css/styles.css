@@ -247,6 +247,9 @@ div.navbar *::selection{
   #abt p{
     font-size: 22px;
   }
+  #cbody{
+    height: 80%;
+  }
 }
 @media only screen and (max-width: 768px){
   .open2{
@@ -274,6 +277,9 @@ div.navbar *::selection{
   #scrollBtn{
     display: none;
   }
+  #cbody{
+    height: 90%;
+  }
 }
 
 @media only screen and (max-width: 560px){
@@ -298,6 +304,9 @@ div.navbar *::selection{
   }
   #mainSoc1{
     display: none;
+  }
+  #cbody{
+    height: 100%;
   }
 }
 
