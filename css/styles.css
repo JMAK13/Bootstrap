@@ -81,6 +81,7 @@ div.navbar *::selection{
   text-align: center;
 }
 #scrollBtn a{
+  display: block;
   position: absolute;
   left: 50%;
   width: 24px;
@@ -240,29 +241,11 @@ div.navbar *::selection{
   letter-spacing: 5px;
   background: transparent;
 }
-/*#learn-more{
-  font-family: "Maven";
-  font-size: 17px;
-  padding: 15px;
-  background-color: rgba(0,0,0,.66);
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  transition-duration: .36s;
-}
-#learn-more:hover{
-  background: #812;
-  transform: scale(1.15,1.15);
-  transition-duration: .25s;
-}*/
 
 /*Media Queries*/
 @media only screen and (max-width: 1400px){
   #abt p{
     font-size: 22px;
-  }
-  #mainSoc1{
-    display: none;
   }
 }
 @media only screen and (max-width: 768px){
@@ -286,6 +269,9 @@ div.navbar *::selection{
   }
   #abt p{
     font-size: 14px;
+  }
+  #scrollBtn{
+    display: none;
   }
 }
 
@@ -430,8 +416,7 @@ div.navbar *::selection{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('../media/logo.png') no-repeat right, url('../media/rcc_logo.png') no-repeat left;
-  background-size: 20%;
+  background: url('../media/logo.png') right/20% no-repeat, url('../media/rcc_logo.png') left/20% no-repeat, url('../media/slide_2.jpg') center/cover repeat;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -446,8 +431,8 @@ div.navbar *::selection{
   margin: 0 0 2% 0;
 }
 #submitB{
-  border: 3px solid #37b;
-  border-radius: 5px;
+  border: 4px solid #25a;
+  border-radius: 8px;
   padding: 8px 20px 8px 20px;
   background-color: #30baff;
   font-size: 25px;
