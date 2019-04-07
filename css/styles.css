@@ -277,9 +277,6 @@ div.navbar *::selection{
   #scrollBtn{
     display: none;
   }
-  #mainSoc1{
-    display: none;
-  }
   #cbody{
     height: 100%;
   }
@@ -304,9 +301,6 @@ div.navbar *::selection{
   }
   #abt p{
     font-size: 14px;
-  }
-  #mainSoc1{
-    display: none;
   }
   #cbody{
     height: 100%;
@@ -372,12 +366,6 @@ div.navbar *::selection{
   font-size: 75px;
   background: white;
   padding: 3% 0 3% 0;
-}
-#mainSoc1{
-  text-align: center;
-  font-size: 75px;
-  background: white;
-  padding: 1% 0 1% 0;
 }
 
 /* Social Media Feeds */
