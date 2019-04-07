@@ -277,8 +277,11 @@ div.navbar *::selection{
   #scrollBtn{
     display: none;
   }
+  #mainSoc1{
+    display: none;
+  }
   #cbody{
-    height: 90%;
+    height: 100%;
   }
 }
 
