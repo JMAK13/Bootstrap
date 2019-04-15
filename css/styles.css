@@ -448,10 +448,10 @@ div.navbar *::selection{
   margin: 0 0 2% 0;
 }
 #submitB{
-  border: 4px solid #25a;
+  border: none;
   border-radius: 8px;
   padding: 8px 20px 8px 20px;
-  background-color: #30baff;
+  background-color: #27b;
   font-size: 25px;
   font-weight: bold;
   font-family: Helvetica;
